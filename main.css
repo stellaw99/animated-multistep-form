@@ -5,22 +5,30 @@
 }
 
 body {
-    /* background-image: linear-gradient(to right rgb(228, 228, 228) rgb(100, 97, 97)); */
     font-family: poppins, sans-serif;
     font-weight: 500;
-    color: rgb(210, 189, 81);
+    color: rgb(213, 196, 111);
     padding: 1em;
     margin: 1em;
+    background-size: cover;
+    background-repeat: no repeat;
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background-color:rgb(242, 230, 230);
 } 
 
 .card {
-    background-color: #fff;
-    border: 1px solid rgb(145, 145, 145);
+    background-color: rgba(255, 255, 255, 0.17);
+    border: 1px solid ;
     border-radius: .5rem;
-    padding: .5rem;
+    padding: 1.2em;
     max-width: 350px;
     margin: 0 auto;
-    animation: fade 500ms 500ms ease-in-out forwards;
+    transform: translateX(200%);
+    opacity: 0;
+    transition: 500ms ease-in-out;
+    position: absolute;
+    /* box-shadow: 5px 0px 5px 0 rgba(0, 0, 0, 0.074), 0 6px 20px 0 rgba(0, 0, 0, 0.2); */
+    /* animation: fade 500ms 500ms ease-in-out forwards; */
     /* margin: .5rem; */
 }
 
@@ -42,10 +50,10 @@ body {
 }
 
 .form-group > input {
-    border: 1px solid rgb(150, 150, 150);
+    border: 1px solid rgb(206, 206, 206);
     border-radius: .25em;
     font-size: 1rem;
-    padding: .25em;
+    padding: .3em;
 }
 
 .step-title {
@@ -55,11 +63,13 @@ body {
 }
 
 .card.active {
+    transform: translateX(0);
     animation: slide 500ms 500ms ease-in-out both;
+    position: relative;
 }
 
 button {
-    background-color: rgb(210, 189, 81);
+    background-color: rgb(213, 196, 111);
     border: none;
     border-radius: 5px;
     color: white;
