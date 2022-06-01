@@ -9,7 +9,7 @@ body {
     font-weight: 500;
     color: rgb(213, 196, 111);
     padding: 1em;
-    margin: 1em;
+    margin: 2em;
     background-size: cover;
     background-repeat: no repeat;
     /* background: linear-gradient(#e66465, #9198e5); */
@@ -50,12 +50,22 @@ body {
 }
 
 .form-group > input {
-    border: 1px solid rgb(206, 206, 206);
+    border: 0.5px solid rgb(206, 206, 206);
     border-radius: .25em;
     font-size: 1rem;
     padding: .3em;
+    
+}
+.form-group > input:focus {
+    border-color: rgb(128, 128, 128);
 }
 
+.step-head {
+    /* margin-top: .3em; */
+    margin-bottom: .3em;
+    line-height: 1.2em;
+    font-size: 1.7rem;
+}
 .step-title {
     margin: 0;
     margin-bottom: .5em;
@@ -64,7 +74,7 @@ body {
 
 .card.active {
     transform: translateX(0);
-    animation: slide 500ms 500ms ease-in-out both;
+    animation: slide 250ms 250ms ease-in-out both;
     position: relative;
 }
 
@@ -75,12 +85,22 @@ button {
     color: white;
     padding: 10px 26px;
     margin-bottom: .3em;
-    margin-top: .3em;
+    margin-top: .4em;
     margin-right: .2em;
     text-align: center;
     text-decoration: none;
     font-size: .9em;
     cursor: pointer;
+}
+.submit {
+    background-color: coral;
+}
+.submit:hover {
+    background-color: rgb(255, 87, 26);
+}
+
+button:hover {
+    background-color: rgb(196, 172, 49);
 }
 
 .multi-step-form {
